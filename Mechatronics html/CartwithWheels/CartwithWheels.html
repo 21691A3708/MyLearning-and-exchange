@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerodynamic Car</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <div class="top-strip"></div>
+
+    <header class="chapter-header">
+      <div class="chapter-box">CHAPTER 2 - AERODYNAMIC CAR</div>
+    </header>
+
+    <!-- PAGE 1 -->
+
+    <section class="page">
+      <div class="dialogue">
+        <p>
+          <span class="laya">Laya:</span> Kit, we've started our journey, but
+          walking on the highway will take far too long.
+        </p>
+
+        <p>
+          <span class="kit">Kit:</span> Let's build a car that will help us get
+          there faster, Laya. The drive will be so beautiful! Look at the
+          mountains and the trees, I'm already excited. But what kind of a car
+          should we build?
+        </p>
+
+        <p>
+          <span class="laya">Laya:</span>That's a fantastic idea, Kit. Hey Rob,
+          what kind of car do you think we should bund?
+        </p>
+
+        <p>
+          <span class="rob">Rob:</span> Hmm, my calculations say that the
+          journey is long but the roads are very good!
+        </p>
+        <p>
+          <span class="laya"> Laya:</span>
+          I already know that Mr. Smarty Pants.
+        </p>
+      </div>
+
+      <img src="./picture1.png" class="page-image" />
+      <img src="./picture2.png" class="step-image" />
+      <img src="./picture3.png" class="step-image" />
+      <img src="./picture4.png" class="step-image" />
+      <img src="./picture5.png" alt="Train" />
+    </section>
+    <section class="aero-body">
+      <div class="content-row">
+        <div class="text-content">
+          <p>
+            <span class="laya">Laya:</span>
+            This journey will take us time. Good thing our car is light and
+            aerodynamic. It gives us speed and uses very little fuel.
+          </p>
+
+          <p>
+            <span class="kit">Kit:</span>
+            Laya, what does aerodynamics mean?
+          </p>
+
+          <p>
+            <span class="laya">Laya:</span>
+            When we run, we can feel the air gushing past us. It doesn't matter
+            so much at that speed, but the faster we go, the air around us will
+            resist the motion further. So, sports cars, fast trains and
+            aeroplanes are designed in a way to cut through the air, so as to
+            create least resistance. Aerodynamics is how objects move through
+            air. Remember this the next time you see a race car.
+          </p>
+        </div>
+
+        <div class="side-images">
+          <img
+            src="./picture6.png"
+            alt="Race Car"
+            style="width: 100%; height: 100%" />
+        </div>
+      </div>
+    </section>
+
+    <footer>© Aerodynamic Car</footer>
+    <style>
+      body {
+        margin: 0;
+        background: #f4f4f4;
+        font-family: Georgia, serif;
+      }
+
+      .top-strip {
+        height: 30px;
+        background: linear-gradient(to right, #cfe8d0, #d9ee7a, #d8e33a);
+      }
+
+      .chapter-header {
+        padding: 20px 30px;
+      }
+
+      .chapter-box {
+        display: inline-block;
+        border: 3px solid #6daedb;
+        padding: 12px 35px;
+        font-size: 30px;
+        font-weight: bold;
+        background: white;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: auto;
+        background: white;
+        padding: 40px;
+      }
+
+      .dialogue p {
+        font-size: 24px;
+        line-height: 1.8;
+      }
+
+      .page-image {
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .step-image {
+        width: 100%;
+        display: block;
+      }
+
+      .laya {
+        color: #c62d48;
+        font-weight: bold;
+      }
+
+      .kit {
+        color: #2b4eb3;
+        font-weight: bold;
+      }
+
+      .rob {
+        color: #1d9a52;
+        font-weight: bold;
+      }
+
+      .meaning {
+        margin-top: 40px;
+      }
+
+      .meaning p {
+        font-size: 24px;
+        line-height: 1.8;
+      }
+
+      footer {
+        background: linear-gradient(to right, #cfe8d0, #d9ee7a, #d8e33a);
+
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 20px;
+      }
+      .aero-body {
+        max-width: 1100px;
+        margin: auto;
+        padding: 30px 60px;
+        background: #f4f4f4;
+        font-family: "Comic Sans MS", cursive;
+      }
+
+      .hero-image {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .hero-image img {
+        width: 100%;
+        max-width: 850px;
+      }
+
+      .content-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+      }
+
+      .text-content {
+        flex: 1;
+        max-width: 600px;
+      }
+
+      .text-content p {
+        font-size: 34px;
+        line-height: 1.5;
+        margin-bottom: 35px;
+      }
+
+      .laya {
+        color: #c52b48;
+        font-weight: bold;
+      }
+
+      .kit {
+        color: #2f4fa8;
+        font-weight: bold;
+      }
+
+      .side-images {
+        width: 520px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        align-content: start;
+      }
+
+      .side-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .question {
+        margin-top: 70px;
+        font-size: 34px;
+        color: #222;
+      }
+    </style>
+  </body>
+</html>
