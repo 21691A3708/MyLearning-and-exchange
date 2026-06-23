@@ -51,8 +51,6 @@
       <img src="./picture3.png" class="step-image" />
       <img src="./picture4.png" class="step-image" />
       <img src="./picture5.png" alt="Train" />
-    </section>
-    <section class="aero-body">
       <div class="content-row">
         <div class="text-content">
           <p>
@@ -181,6 +179,7 @@
       .hero-image img {
         width: 100%;
         max-width: 850px;
+        padding: 2%;
       }
 
       .content-row {
@@ -230,6 +229,36 @@
         margin-top: 70px;
         font-size: 34px;
         color: #222;
+      }
+      .content-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+      }
+
+      .text-content {
+        flex: 1; /* Take remaining width */
+        max-width: none; /* Remove width limit */
+      }
+
+      .side-images {
+        width: 120px; /* Fixed width for images */
+        flex-shrink: 0;
+      }
+      .aero-body {
+        width: 95%;
+        max-width: 1500px;
+        margin: auto;
+      }
+
+      .text-content {
+        width: 100%;
+      }
+
+      .side-images {
+        float: right;
+        width: 260px;
+        margin-left: 25px;
       }
     </style>
   </body>
