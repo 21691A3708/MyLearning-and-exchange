@@ -1,0 +1,287 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blix Chapters</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #f2f2f2;
+        font-family: Georgia, serif;
+        padding: 30px;
+      }
+
+      /* BOOK PAGE */
+      .page {
+        width: 850px;
+        background: #fff;
+        margin: 0 auto 50px auto;
+        padding: 40px 60px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+      }
+
+      /* PRINT PAGE BREAK */
+      .page-break {
+        page-break-after: always;
+      }
+
+      .top-bar,
+      .header-line {
+        height: 12px;
+        margin-bottom: 25px;
+        background: linear-gradient(
+          to right,
+          #b7e6c8,
+          #d5f27d,
+          #e9ff44,
+          #dce97d
+        );
+      }
+
+      /* CHAPTER TITLE */
+      .chapter-title,
+      .chapter-heading {
+        margin-bottom: 30px;
+      }
+
+      .chapter-title span,
+      .chapter-heading {
+        display: inline-block;
+        border-top: 3px solid #4ea5ff;
+        border-bottom: 3px solid #4ea5ff;
+        padding: 6px 15px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* TEXT */
+      p {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      .intro {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+      }
+
+      /* CHARACTER COLORS */
+      .driver {
+        color: #ff6f00;
+        font-weight: bold;
+      }
+
+      .laya {
+        color: #d81b60;
+        font-weight: bold;
+      }
+
+      .kit {
+        color: #1a4db3;
+        font-weight: bold;
+      }
+
+      .robb {
+        color: #00a651;
+        font-weight: bold;
+      }
+
+      /* CHAPTER 9 IMAGE */
+      .illustration {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .illustration img {
+        width: 100%;
+        max-width: 550px;
+      }
+
+      /* CHAPTER 10 LAYOUT */
+      .content-section {
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+        margin-top: 20px;
+      }
+
+      .text-column {
+        flex: 1;
+      }
+
+      .image-column {
+        width: 380px;
+      }
+
+      .image-column img {
+        width: 100%;
+        display: block;
+      }
+
+      .footer-text {
+        margin-top: 25px;
+        font-size: 22px;
+      }
+
+      @media (max-width: 900px) {
+        .page {
+          width: 100%;
+          padding: 25px;
+        }
+
+        .content-section {
+          flex-direction: column;
+        }
+
+        .image-column {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===================== -->
+
+    <!-- CHAPTER 9 -->
+
+    <!-- ===================== -->
+
+    <div class="page">
+      <div class="top-bar"></div>
+
+      <div class="chapter-title">
+        <span>CHAPTER 9 - MONEY</span>
+      </div>
+
+      <div class="content">
+        <p>
+          The man felt grateful and invited them both to his village. Kit and
+          Laya were very happy to meet new people and even help them. They
+          accepted the invitation, but the village was far away, so they needed
+          a vehicle to get there. A taxi driver was standing nearby.
+        </p>
+
+        <p>
+          <span class="laya">Laya:</span>
+          How much would it cost to travel to the village?
+        </p>
+
+        <p>
+          <span class="driver">Driver:</span>
+          200 rupees.
+        </p>
+
+        <p>
+          <span class="kit">Kit:</span>
+          Suggested counting the money the three of them had, but the total was
+          only Rs.50.
+        </p>
+
+        <p>
+          <span class="kit">Kit:</span>
+          Why don't you take 200 blix holes instead?
+        </p>
+
+        <p>
+          <span class="driver">Driver:</span>
+          Looks like a good deal because I have a kid who likes to play with
+          blix figures. Challenge: Collect 300 holes in total from the blix
+          pieces you have.
+        </p>
+      </div>
+
+      <div class="illustration">
+        <img src="./picture1.png" alt="Taxi Scene" />
+      </div>
+      <div class="chapter-heading">CHAPTER 10 - CAR JACK</div>
+
+      <div class="intro">
+        The car was driving smoothly until one of the tires punctured.
+      </div>
+
+      <p>
+        <span class="driver">Driver:</span>
+        Ohh No!! I'm sorry that we're stuck in the middle of nowhere.
+      </p>
+
+      <p>
+        <span class="laya">Laya:</span>
+        Don't worry Sir, our friend Robb will quickly have a solution.
+      </p>
+
+      <p>
+        <span class="robb">Robb:</span>
+        Mmmmm... Please allow me to check my system.
+      </p>
+
+      <p>
+        <span class="robb">Robb:</span>
+        Yes, we need a car jack to repair the puncture, and I can show you how
+        to make one.
+      </p>
+
+      <p>
+        <span class="laya">Laya:</span>
+        What are we going to need for it?
+      </p>
+
+      <div class="content-section">
+        <div class="text-column">
+          <p>
+            <span class="robb">Robb:</span>
+            A power screw mainly. Robb shows the given image on his screen.
+          </p>
+
+          <p>
+            <span class="kit">Kit:</span>
+            A power screw... I wonder what it does.
+          </p>
+
+          <p>
+            <span class="robb">Robb:</span>
+            A power screw is used in a car jack to lift the car up so that we
+            can change a tire or do some repair work.
+          </p>
+
+          <p>
+            When we turn the handle of the jack, it moves the power screw, which
+            raises the jack and lifts the car.
+          </p>
+
+          <p>
+            This helps us do the work without having to lift the heavy car by
+            ourselves.
+          </p>
+        </div>
+
+        <div class="image-column">
+          <img src="./picture2.png" alt="Car Jack Illustration" />
+        </div>
+      </div>
+
+      <div class="footer-text">
+        Let's make it with the amazing blix pieces we have.
+      </div>
+      <img
+        src="./picture3.png"
+        alt="Blix Pieces"
+        style="width: 100%; max-width: 600px; margin-top: 20px" />
+      <img
+        src="./picture4.png"
+        alt="Car Jack Assembly"
+        style="width: 100%; max-width: 600px; margin-top: 20px" />
+    </div>
+  </body>
+</html>
