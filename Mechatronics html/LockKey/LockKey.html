@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 15 - Lock & Key</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #e9e9e9;
+        font-family: Arial, sans-serif;
+      }
+
+      /* COMMON PAGE */
+
+      .page {
+        width: 900px;
+        min-height: 1270px;
+        margin: 30px auto;
+        background: white;
+        position: relative;
+        padding: 35px;
+      }
+
+      .header-strip {
+        height: 20px;
+        background: linear-gradient(90deg, #d7f2d7, #cde55d, #d8ea63);
+        margin-bottom: 25px;
+      }
+
+      .footer-strip {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background: linear-gradient(90deg, #d7f2d7, #cde55d, #d8ea63);
+      }
+
+      .page-number {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        font-size: 20px;
+      }
+
+      /* PAGE 1 */
+
+      .chapter-title {
+        display: inline-block;
+        font-size: 34px;
+        font-weight: bold;
+        border-bottom: 4px solid #53aae8;
+        padding: 8px 20px;
+        margin-bottom: 35px;
+      }
+
+      .hero-image {
+        width: 100%;
+        display: block;
+        margin: 0 auto 30px;
+      }
+
+      .mechanism-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .mechanism-row img {
+        width: 300px;
+      }
+
+      /* PAGE 4 */
+
+      .step-title {
+        display: inline-block;
+        border: 3px solid #53aae8;
+        border-radius: 30px;
+        padding: 6px 25px;
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+
+      .assembly-box {
+        border: 2px solid #f0d867;
+        display: inline-block;
+        padding: 8px 15px;
+        margin-bottom: 30px;
+        font-size: 22px;
+      }
+
+      .top-model {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .top-model img {
+        width: 380px;
+      }
+
+      .theory {
+        font-size: 30px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+      }
+
+      .bottom-layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .speech {
+        width: 42%;
+        border: 4px solid #333;
+        border-radius: 50px;
+        padding: 30px;
+        font-size: 24px;
+        line-height: 1.5;
+      }
+
+      .character-image {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .final-scene {
+        width: 50%;
+      }
+
+      .final-scene img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PAGE 51 -->
+
+    <section class="page">
+      <div class="header-strip"></div>
+
+      <div class="chapter-title">CHAPTER 15 - LOCK & KEY</div>
+
+      <img src="./picture1.png" class="hero-image" alt="Main Illustration" />
+      <img src="./picture2.png" class="hero-image" alt="Main Illustration" />
+      <img src="./picture3.png" class="hero-image" alt="Main Illustration" />
+
+      <div class="step-title">Step 7</div>
+
+      <br /><br />
+
+      <div class="assembly-box">Assembly of Step 6 Step 4</div>
+
+      <div class="top-model">
+        <img src="./picture4.png" alt="Step 7 Model" />
+      </div>
+
+      <div class="theory">
+        <b>Theory:</b>
+        SH(60) with G(20)+ is your key. When you turn the key, G(60) will move
+        over the rack gear and open the lock.
+      </div>
+
+      <div class="bottom-layout">
+        <div>
+          <!-- <div class="speech">
+            We did it! Hi-5, Laya. Hi-5, Rob. Now the villagers can worship
+            whenever they want while keeping the idol safe.
+          </div> -->
+
+          <img src="./picture5.png" class="character-image" alt="Children" />
+        </div>
+      </div>
+
+      <div class="footer-strip"></div>
+    
+  </body>
+</html>
