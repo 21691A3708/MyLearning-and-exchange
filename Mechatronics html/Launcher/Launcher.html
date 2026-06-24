@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 26 - Launcher</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #ececec;
+        font-family: "Comic Sans MS", cursive;
+      }
+
+      .page {
+        width: 1000px;
+        min-height: 1400px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 30px 50px;
+        position: relative;
+      }
+
+      /* Top Strip */
+
+      .top-strip {
+        height: 24px;
+        background: linear-gradient(to right, #cde8d8, #d6ea64, #edf44d);
+        margin-bottom: 25px;
+      }
+
+      /* Chapter Banner */
+
+      .chapter-banner {
+        display: inline-block;
+        border: 3px solid #74b9ff;
+        padding: 10px 40px;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+
+      /* Story Section */
+
+      .story {
+        width: 850px;
+        margin: auto;
+        font-size: 24px;
+        line-height: 1.8;
+      }
+
+      .robb {
+        color: #11a64d;
+        font-weight: bold;
+      }
+
+      /* Step Label */
+
+      .step {
+        margin-top: 250px;
+        margin-left: 60px;
+        display: inline-block;
+        border: 3px solid #74b9ff;
+        padding: 10px 35px;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      /* Assembly Area */
+
+      .assembly {
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      /* Parts List */
+
+      .parts {
+        width: 220px;
+      }
+
+      .part {
+        border: 2px solid #e4cf61;
+        padding: 10px;
+        margin-bottom: 25px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      /* Launcher Model */
+
+      .model {
+        width: 620px;
+        height: 520px;
+        border: 2px dashed #aaa;
+        background: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #888;
+        font-size: 22px;
+      }
+
+      /* Footer Strip */
+
+      .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+
+        background: linear-gradient(to right, #cde8d8, #d6ea64, #edf44d);
+      }
+
+      .page-number {
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-strip"></div>
+
+      <div class="chapter-banner">CHAPTER 26 - LAUNCHER</div>
+
+      <div class="story">
+        <p>
+          Kit and Laya move forward, and they notice a puzzle at a height. A
+          puzzle that was unfinished. The missing piece of the puzzle was lying
+          on the floor. They couldn't move forward unless they completed the
+          challenge.
+        </p>
+
+        <p>
+          <span class="robb">Robb:</span>
+          Kit and Laya, let's build a launcher so we can get the piece to the
+          right place and finish this puzzle.
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="./picture1.png"
+          alt="Step Icon"
+          style="
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: 10px;
+          " />
+        <img
+          src="./picture2.png"
+          alt="Step Icon"
+          style="
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: 10px;
+          " />
+        <img
+          src="./picture3.png"
+          alt="Step Icon"
+          style="
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            margin-right: 10px;
+          " />
+        <img
+          src="./picture4.png"
+          alt="Step Icon"
+          style="
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+          " />
+      </div>
+
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
