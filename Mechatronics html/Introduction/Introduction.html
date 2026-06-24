@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #ececec;
+        font-family: "Comic Sans MS", cursive;
+      }
+
+      .page {
+        width: 1000px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 30px;
+      }
+
+      .top-strip {
+        height: 22px;
+        background: linear-gradient(to right, #cfe8d6, #d8ea57, #edf24d);
+        margin-bottom: 25px;
+      }
+
+      .title-banner {
+        display: inline-block;
+        border: 3px solid #73b8ff;
+        padding: 8px 35px;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+
+      /* Intro Section */
+
+      .intro-section {
+        display: flex;
+        gap: 30px;
+      }
+
+      .text {
+        flex: 1;
+        font-size: 22px;
+        line-height: 1.7;
+      }
+
+      .image-area {
+        width: 420px;
+        height: 450px;
+        border: 2px dashed #aaa;
+        background: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #777;
+      }
+
+      .laya {
+        color: #b32448;
+        font-weight: bold;
+      }
+
+      .kit {
+        color: #3148b8;
+        font-weight: bold;
+      }
+
+      .rob {
+        color: #0da64d;
+        font-weight: bold;
+      }
+
+      p {
+        margin-bottom: 18px;
+      }
+
+      /* Section Title */
+
+      .section-title {
+        margin-top: 40px;
+        display: inline-block;
+        border: 3px solid #5d78d7;
+        padding: 8px 35px;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      /* Construction */
+
+      .construct {
+        margin-top: 30px;
+      }
+
+      .item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 35px;
+      }
+
+      .icon {
+        width: 80px;
+        height: 50px;
+        border: 1px dashed #aaa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .desc {
+        flex: 1;
+        font-size: 22px;
+      }
+
+      .demo {
+        width: 300px;
+        height: 120px;
+        border: 1px dashed #aaa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Note */
+
+      .note {
+        border: 2px solid #444;
+        width: 420px;
+        padding: 15px;
+        margin: 20px 0;
+        font-size: 20px;
+      }
+
+      /* Dismantle */
+
+      .dismantle {
+        margin-top: 40px;
+      }
+
+      .tool-layout {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .tool-text {
+        width: 300px;
+        border: 2px solid #444;
+        padding: 15px;
+        font-size: 20px;
+      }
+
+      .tool-image {
+        flex: 1;
+        height: 180px;
+        border: 2px dashed #aaa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bottom-strip {
+        height: 70px;
+        margin-top: 30px;
+        background: linear-gradient(to right, #cfe8d6, #d8ea57, #edf24d);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-strip"></div>
+
+      <div class="title-banner">INTRODUCTION</div>
+
+      <div class="intro-section">
+        <div class="text">
+          <p>
+            <span class="laya">Laya:</span>
+            Welcome fellow adventurers! My name is Laya, this is Kit, and Rob
+            there hanging on the tree, is our friendly robot!
+          </p>
+
+          <p>
+            Don't tell him I said so, but he is a little brat, though he can
+            find the answer to any question on the internet.
+          </p>
+
+          <p>
+            Kit, though, loves to create trouble: he'll pick anything apart to
+            see how it works!
+          </p>
+
+          <p>
+            <span class="kit">Kit:</span>
+            And, I must interrupt to tell you, that Laya knows everything!
+          </p>
+
+          <p>
+            <span class="laya">Laya:</span>
+            We love adventures and often travel to foreign lands with our bag of
+            essentials, which includes our food, water and most importantly, our
+            BLIX set.
+          </p>
+
+          <p>
+            <span class="rob">Rob:</span>
+            This set has everything that you can use to make whatever you need.
+            Join us on our adventure and help us build our way out of every
+            challenge that we face. But before we start, let's figure out how to
+            use our BLIX set.
+          </p>
+        </div>
+
+        <div class="image-area">
+          <img
+            src="./picture1.png"
+            alt="BLIX Set"
+            style="width: 100%; height: 100%; object-fit: contain" />
+        </div>
+      </div>
+
+      <div class="section-title">HOW TO CONSTRUCT</div>
+
+      <div class="construct">
+        <div class="item">
+          <div class="icon">
+            <img
+              src="./picture2-1.png"
+              alt="Connector"
+              style="width: 100%; height: 100%; object-fit: contain" />
+          </div>
+
+          <div class="desc">
+            I - CL2 - Use this connector to loosely connect 2 pieces.
+          </div>
+
+          <div class="demo">
+            <img
+              src="./picture2-2.png"
+              alt="Construction Image"
+              style="width: 100%; height: 100%; object-fit: contain" />
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon">
+            <img
+              src="./picture3-1.png"
+              alt="Connector"
+              style="width: 100%; height: 100%; object-fit: contain" />
+          </div>
+
+          <div class="desc">
+            II - CT2 - Use this connector to attach 2 pieces.
+          </div>
+
+          <div class="demo">
+            <img
+              src="./picture3-2.png"
+              alt="Construction Image"
+              style="width: 100%; height: 100%; object-fit: contain" />
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon">
+            <img
+              src="./picture4-1.png"
+              alt="Connector"
+              style="width: 100%; height: 100%; object-fit: contain" />
+          </div>
+
+          <div class="desc">
+            III - CT3 - Use this connector to attach 3 pieces.
+          </div>
+
+          <div class="demo">
+            <img
+              src="./picture4-2.png"
+              alt="Construction Image"
+              style="width: 100%; height: 100%; object-fit: contain" />
+          </div>
+        </div>
+
+        <div class="note">
+          During assembly ensure position of collar is same as in the images.
+        </div>
+      </div>
+
+      <div class="section-title">How to Dismantle</div>
+
+      <div class="dismantle">
+        <div class="tool-layout">
+          <div class="tool-text">
+            • Narrow edge to remove connectors
+
+            <br /><br />
+
+            • Fit the tool into narrow side of connector collar
+          </div>
+
+          <div class="tool-image">
+            <img
+              src="./picture5.png"
+              alt="Dismantle Tool"
+              style="width: 100%; height: 100%; object-fit: contain" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-strip"></div>
+    </div>
+  </body>
+</html>
