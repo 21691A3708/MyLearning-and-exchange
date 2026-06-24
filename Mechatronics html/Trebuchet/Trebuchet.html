@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 4 – Trebuchet · BLIX</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #e8eef0;
+        font-family: "Trebuchet MS", "Segoe UI", Roboto, sans-serif;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .story-container {
+        max-width: 1200px;
+        width: 70%;
+        background: white;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        border-radius: 28px;
+        padding: 30px 40px 50px;
+      }
+
+      /* ----- BANNERS (like PSD top/bottom) ----- */
+      .banner-strip {
+        height: 24px;
+        background: linear-gradient(
+          90deg,
+          #cfe6d0 0%,
+          #d6eb62 40%,
+          #dfe04d 80%,
+          #cfe6d0 100%
+        );
+        border-radius: 40px;
+        margin-bottom: 24px;
+        opacity: 0.9;
+      }
+
+      .banner-strip.bottom {
+        margin-top: 40px;
+        margin-bottom: 0;
+      }
+
+      /* ----- CHAPTER TITLE (PSD style) ----- */
+      .chapter-title {
+        display: inline-block;
+        padding: 6px 48px 6px 48px;
+        border-top: 5px solid #4da2dd;
+        border-bottom: 5px solid #4da2dd;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #1f2a3e;
+        margin: 8px 0 32px 0;
+        background: transparent;
+        text-transform: uppercase;
+      }
+
+      /* ----- TEXT & SPEAKERS (exact PSD colors) ----- */
+      .speech {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 22px;
+        color: #1e2b3c;
+      }
+
+      .speech:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .laya {
+        color: #b01948;
+        font-weight: 700;
+      }
+
+      .rob {
+        color: #0aa85a;
+        font-weight: 700;
+      }
+
+      .kit {
+        color: #3848b6;
+        font-weight: 700;
+      }
+
+      /* ----- FLEX LAYOUT (top section: dialogue + image) ----- */
+      .top-flex {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        margin-top: 6px;
+      }
+
+      .left-dialogue {
+        flex: 1.3;
+      }
+
+      .right-illustration {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .right-illustration img {
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+      }
+
+      /* ----- BOTTOM SECTION (scene + text) ----- */
+      .bottom-flex {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
+
+      .scene-left {
+        flex: 1.1;
+        min-width: 200px;
+      }
+
+      .scene-left img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+      }
+
+      .bottom-text {
+        flex: 1.2;
+      }
+
+      /* ----- DIALOGUES (middle block) ----- */
+      .dialogue-block {
+        margin: 40px 0 30px 0;
+        padding: 12px 0 8px 0;
+      }
+
+      /* ----- STEP IMAGES (horizontal row) ----- */
+      .step-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px 30px;
+        margin: 30px 0 10px 0;
+      }
+
+      .step-row img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        border-radius: 18px;
+        background: #f4f8fa;
+        padding: 6px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        transition: 0.1s ease;
+        object-fit: contain;
+      }
+
+      /* ----- FINAL DIALOGUE + ILLUSTRATION (page 6) ----- */
+      .final-section {
+        margin-top: 48px;
+        border-top: 2px dashed #d0dce4;
+        padding-top: 32px;
+      }
+
+      .final-dialogue {
+        margin-bottom: 28px;
+      }
+
+      .final-image {
+        text-align: center;
+        margin: 20px 0 10px;
+      }
+
+      .final-image img {
+        width: 100%;
+        max-width: 750px;
+        height: auto;
+        border-radius: 28px;
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+      }
+
+      /* ----- RESPONSIVE (PSD friendly) ----- */
+      @media (max-width: 1000px) {
+        .story-container {
+          padding: 24px 24px 40px;
+        }
+
+        .top-flex {
+          flex-direction: column;
+        }
+
+        .bottom-flex {
+          flex-direction: column;
+        }
+
+        .right-illustration img,
+        .scene-left img {
+          max-width: 100%;
+        }
+
+        .step-row img {
+          max-width: 140px;
+        }
+
+        .chapter-title {
+          font-size: 28px;
+          padding: 4px 30px;
+        }
+
+        .speech {
+          font-size: 22px;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .story-container {
+          padding: 16px 14px 30px;
+        }
+
+        .speech {
+          font-size: 18px;
+          line-height: 1.5;
+          margin-bottom: 16px;
+        }
+
+        .chapter-title {
+          font-size: 22px;
+          padding: 2px 20px;
+          border-width: 3px;
+        }
+
+        .step-row img {
+          max-width: 110px;
+        }
+
+        .banner-strip {
+          height: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="story-container">
+      <!-- TOP BANNER (PSD) -->
+      <div class="banner-strip"></div>
+
+      <!-- CHAPTER -->
+      <div class="chapter-title">CHAPTER 4 – TREBUCHET</div>
+
+      <!-- TOP SECTION: dialogue left + image right (Page 1) -->
+      <div class="top-flex">
+        <div class="left-dialogue">
+          <p class="speech">
+            <span class="laya">Laya:</span> Rob, this drive seems too long, and
+            I am getting bored now. Why don't you sing for us?
+          </p>
+          <p class="speech">
+            <span class="rob">Rob:</span> I could, but do you really think I
+            have great voice?
+          </p>
+          <p class="speech"><span class="laya">Laya:</span> Rob just sing!</p>
+          <p class="speech">
+            <span class="rob">Rob:</span> Okay, okay, here I go: "Humpty Dumpty
+            sat on the wall / Humpty Dumpty had a great fall..."
+          </p>
+          <p class="speech">
+            <span class="kit">Kit:</span> Rob, you could think of no other
+            song?!
+          </p>
+          <p class="speech">
+            <span class="rob">Rob:</span> "All the king's horses and all the
+            king's men/Couldn't put Humpty together again!" Hahahahaha.
+          </p>
+        </div>
+        <div class="right-illustration">
+          <img
+            src="./picture1.png"width='400' height='320' viewBox='0 0 400 320'%3E%3Crect width='400' height='320' fill='%23e3edf0'/%3E%3Ccircle cx='150' cy='150' r='60' fill='%23f5cba0'/%3E%3Ccircle cx='280' cy='130' r='40' fill='%23b0c4d9'/%3E%3Crect x='100' y='200' width='220' height='20' fill='%236b8c9e'/%3E%3Ctext x='50' y='280' font-family='monospace' font-size='18' fill='%233d5a6d'%3Epicture1%20(rob%20%26%20kids)%3C/text%3E%3C/svg%3E"
+            alt="Rob and kids illustration" />
+        </div>
+      </div>
+
+      <!-- BOTTOM SECTION: scene image left + text right (Page 2) -->
+      <div class="bottom-flex">
+        <div class="scene-left">
+          <img
+            src="./picture2.png"width='500' height='300' viewBox='0 0 500 300'%3E%3Crect width='500' height='300' fill='%23d4e2e8'/%3E%3Crect x='50' y='180' width='400' height='90' fill='%235f7d6b'/%3E%3Ccircle cx='120' cy='140' r='50' fill='%23a3c4a0'/%3E%3Ccircle cx='360' cy='130' r='45' fill='%2399b89e'/%3E%3Ctext x='120' y='260' font-family='monospace' font-size='20' fill='%232a4a3a'%3Eforest%20%26%20valley%3C/text%3E%3C/svg%3E"
+            alt="Forest and valley scene" />
+        </div>
+        <div class="bottom-text">
+          <p class="speech">
+            <span class="laya">Laya:</span> Very funny, Rob. Anyway, aren't you
+            both hungry? I see endless forests on the other side of the valley.
+            Rob, what kind of fruit would we find there?
+          </p>
+          <p class="speech">
+            <span class="kit">Kit:</span> Now that you mentioned it Laya, my
+            stomach is rumbling. Rob, do you think I'll find some strawberries
+            in the forest?
+          </p>
+          <p class="speech">
+            <span class="rob">Rob:</span> Hold on, kids! Kit, strawberries grow
+            in bushes, not trees. Let's get there and see which fruits we find,
+            maybe they could be apples.
+          </p>
+        </div>
+      </div>
+
+      <!-- DIALOGUES (Page 2–3) -->
+      <div class="dialogue-block">
+        <p class="speech">
+          <span class="laya">Laya:</span> Kit, think of a way to get us there
+          nowww.
+        </p>
+        <p class="speech">
+          <span class="kit">Kit:</span> Hey hey, I am ready with the plan. Do
+          you want to hear it?
+        </p>
+        <p class="speech"><span class="rob">Rob:</span> Yes yes, tell us.</p>
+        <p class="speech">
+          <span class="kit">Kit:</span> We can make a machine that can fly Rob
+          to the other side.
+        </p>
+        <p class="speech">
+          <span class="laya">Laya:</span> Fly? Are you serious? Do you want to
+          hurt Rob?
+        </p>
+        <p class="speech">
+          <span class="rob">Rob:</span> Don't you worry Laya, flying sounds
+          exciting. I won't get hurt, I have a metal body, and only rust can
+          hurt me.
+        </p>
+        <p class="speech">
+          <span class="kit">Kit:</span> Okay then, let's get to work, Laya. Rob,
+          get our BLIX set please.
+        </p>
+      </div>
+
+      <!-- STEP IMAGES (Page 3–5) picture3,4,5,6 -->
+      
+        <img
+          src="./picture3.png"
+          alt="Step 3" 
+          style="width: 100%;  height: auto; border-radius: 18px; background: #f4f8fa; padding: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); transition: 0.1s ease; object-fit: contain;"
+          />
+        <img
+          src="./picture4.png"
+          alt="Step 4"
+          style="width: 100%;  height: auto; border-radius: 18px; background: #f4f8fa; padding: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); transition: 0.1s ease; object-fit: contain;" />
+        <img
+          src="./picture5.png"
+          alt="Step 5"
+          style="width: 100%;  height: auto; border-radius: 18px; background: #f4f8fa; padding: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); transition: 0.1s ease; object-fit: contain;" />
+        <img
+          src="./picture6.png"
+          alt="Step 6"
+          style="width: 100%;  height: auto; border-radius: 18px; background: #f4f8fa; padding: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); transition: 0.1s ease; object-fit: contain;" />
+    
+
+      <!-- FINAL DIALOGUE (Page 6) + final image picture7 -->
+      <div class="final-section">
+        <div class="final-dialogue">
+          <p class="speech">
+            <span class="laya">Laya:</span> Kit, do you consider your best
+            friend?
+          </p>
+          <p class="speech">
+            <span class="kit">Kit:</span> Of course he is my best friend. Why do
+            you ask?
+          </p>
+          <p class="speech">
+            <span class="laya">Laya:</span> What is your plan to get Rob back
+            here once he reaches the other side?
+          </p>
+          <p class="speech">
+            <span class="kit">Kit:</span> Oh no! I didn't think about that.
+          </p>
+          <p class="speech">
+            <span class="laya">Laya:</span> That's why you need me. So, listen,
+            here's the plan. We will tie him with rope, and when Rob sits on the
+            machine, we can pull him back once he's done picking the fruits.
+          </p>
+          <p class="speech">
+            <span class="kit">Kit:</span> As usual, genius, Laya!
+          </p>
+        </div>
+
+        <div class="final-image">
+          <img
+            src="./picture7.png" width='750' height='380' viewBox='0 0 750 380'%3E%3Crect width='750' height='380' fill='%23dce8ed'/%3E%3Crect x='100' y='200' width='550' height='70' fill='%23638a7a'/%3E%3Ccircle cx='300' cy='140' r='60' fill='%23b8d0dc'/%3E%3Crect x='450' y='120' width='80' height='80' fill='%239bb7c9'/%3E%3Ctext x='220' y='300' font-family='monospace' font-size='24' fill='%232a4a3a'%3Etrebuchet%20%26%20rope%20plan%3C/text%3E%3C/svg%3E"
+            alt="Trebuchet final scene with rope plan" />
+        </div>
+      </div>
+
+      <!-- BOTTOM BANNER (PSD) -->
+      <div class="banner-strip bottom"></div>
+    </div>
+    <!-- end story-container -->
+  </body>
+</html>
