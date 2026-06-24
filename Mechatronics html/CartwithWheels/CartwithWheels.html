@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart With Wheels</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #efefef;
+        font-family: "Trebuchet MS", sans-serif;
+        color: #222;
+      }
+
+      .page {
+        width: 1000px;
+        margin: 30px auto;
+        background: #fff;
+        padding: 30px;
+        position: relative;
+      }
+
+      .top-strip,
+      .bottom-strip {
+        height: 22px;
+        background: linear-gradient(
+          to right,
+          #cbe8d5,
+          #cde36d,
+          #d9e84d,
+          #dfe68c
+        );
+      }
+
+      .chapter {
+        margin: 20px 0;
+      }
+
+      .chapter-title {
+        display: inline-block;
+        border: 3px solid #5da9e9;
+        padding: 8px 30px;
+        font-size: 34px;
+        font-weight: bold;
+        background: white;
+      }
+
+      .dialogue {
+        margin-top: 25px;
+        font-size: 22px;
+        line-height: 1.6;
+      }
+
+      .laya {
+        color: #b91c42;
+        font-weight: bold;
+      }
+
+      .kit {
+        color: #3046b5;
+        font-weight: bold;
+      }
+
+      .oldman {
+        color: #b55a1a;
+        font-weight: bold;
+      }
+
+      .rob {
+        color: #159447;
+        font-weight: bold;
+      }
+
+      .story-layout {
+        display: flex;
+        margin-top: 30px;
+        gap: 30px;
+      }
+
+      .story-text {
+        flex: 1;
+      }
+
+      .story-image {
+        flex: 1;
+      }
+
+      .story-image img {
+        width: 100%;
+      }
+
+      .speech {
+        margin-top: 25px;
+        border: 3px solid #333;
+        border-radius: 40px;
+        padding: 25px;
+        font-size: 22px;
+        background: #fdfdfd;
+        width: 40%;
+        height: 40%;
+      }
+
+      .theory-title {
+        display: inline-block;
+        border: 3px solid #5da9e9;
+        padding: 8px 30px;
+        font-size: 36px;
+        font-weight: bold;
+        background: white;
+      }
+
+      .theory-layout {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .theory-text {
+        flex: 2;
+        font-size: 24px;
+        line-height: 1.8;
+      }
+
+      .theory-image {
+        flex: 1;
+      }
+
+      .theory-image img {
+        width: 100%;
+      }
+
+      .lines {
+        margin-top: 40px;
+      }
+
+      .lines div {
+        height: 50px;
+        border-bottom: 2px solid #999;
+      }
+
+      .page-number {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 22px;
+      }
+      .speech {
+        width: 400px; /* or 100%, whatever size you need */
+        height: 300px; /* set a height */
+        overflow: hidden;
+      }
+
+      .speech-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* fills the div while maintaining aspect ratio */
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PAGE 1 -->
+
+    <section class="page">
+      <div class="top-strip"></div>
+
+      <div class="chapter">
+        <div class="chapter-title">CHAPTER 1 - CART WITH WHEELS</div>
+      </div>
+
+      <div class="dialogue">
+        <span class="laya">Laya:</span>
+        Brrrrr. It's a cold morning! Quite apt, considering we have been
+        training and are ready to start our journey to the North Pole. Don't you
+        think, Kit?
+      </div>
+
+      <div class="dialogue">
+        <span class="kit">Kit:</span>
+        I agree, Laya. I'm quite excited to begin. But wait... Look over there,
+        an old man is trying to drag a huge tank of water on the ground. Let's
+        go help him.
+      </div>
+
+      <div class="dialogue">
+        <span class="laya">Laya:</span>
+        Hello sir! That container looks a bit heavy. Where exactly are you
+        taking it?
+      </div>
+
+      <div class="dialogue">
+        <span class="oldman">Old Man:</span>
+        There is a severe water shortage near my house and I have a big family
+        who needs water. I've just filled this tank from the river behind and my
+        home is rather far from here. I have no option but to drag it till
+        there.
+      </div>
+
+      <div class="story-layout">
+        <div class="story-image">
+          <img src="./picture1.png" alt="" />
+        </div>
+
+        <div class="story-text">
+          <div class="dialogue">
+            <span class="kit">Kit:</span>
+            It must be difficult for you sir. Laya, can we figure out a way to
+            help him?
+          </div>
+
+          <div class="speech">
+            <img
+              src="./picture2.png"
+              alt="Blix"
+              style="display: block; width: 100%; height: 100%" />
+          </div>
+
+          <div class="dialogue">
+            <span class="laya">Laya:</span>
+            You're right, Rob. Kit, let's open our Blix set and see what we can
+            do to make this easy for him.
+          </div>
+        </div>
+      </div>
+      <section style="width: 100%; height: 100%">
+        <img src="./picture3.png" alt="" style="width: 100%" />
+        <img src="./picture4.png" alt="" style="width: 100%" />
+        <img src="./picture5.png" alt="" style="width: 100%" />
+      </section>
+      <section class="page">
+        <div class="theory-layout">
+          <div class="theory-image">
+            <img src="./picture6.png" alt="" />
+          </div>
+
+          <div class="theory-text">
+            <p>
+              <span class="kit">Kit:</span>
+              Wow! What a lovely feeling it is to be able to help those in need.
+            </p>
+
+            <br />
+
+            <p>
+              <span class="laya">Laya:</span>
+              I agree. Now let's hurry, we have the North Pole to get to!
+            </p>
+          </div>
+        </div>
+
+        <br /><br />
+
+        <div class="theory-title">Theory</div>
+
+        <div class="theory-layout">
+          <div class="theory-text">
+            <p>
+              When you try and drag an object on any surface, there is a force
+              that resists this. This force is called friction.
+            </p>
+
+            <br />
+
+            <p>
+              Friction can be very good as well! For example, rubber soles on
+              shoes stop us from slipping. But when you are trying to move
+              something, friction makes it very difficult.
+            </p>
+
+            <p>
+              Wheels help reduce friction since there is no sliding that takes
+              place.
+            </p>
+
+            <br />
+
+            <p>
+              Wheels along with an axle are one of the simplest of machines and
+              we use them everywhere. They make our work easy and since their
+              invention thousands of years ago, they have been irreplaceable.
+            </p>
+
+            <p>
+              <span class="rob">Rob:</span>
+
+              Now there's one more place where Laya and Kit have a problem with
+              friction. Rob: Slides! They love swings and seesaws, but slides
+              are their favourite. Except the times when there ig too much
+              friction and you don't slide! So, can you think of ideas to make a
+              slide that's always slippery.
+            </p>
+
+            <p>What are the new words that you have learned today?</p>
+          </div>
+
+          <div class="theory-image">
+            <img src="./picture7.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="bottom-strip"></div>
+
+      <div class="page-number"></div>
+    </section>
+
+    <!-- PAGE 5 -->
+  </body>
+</html>
