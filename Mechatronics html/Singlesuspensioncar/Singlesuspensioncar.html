@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Suspension Car</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <div class="top-banner"></div>
+
+      <div class="chapter-tag">CHAPTER 6</div>
+
+      <!-- FIRST PAGE CONTENT -->
+
+      <div class="intro-text">
+        <p>
+          <span class="laya">Laya:</span> Oh it feels so good to have a full
+          tummy, doesn't it Kit?
+        </p>
+
+        <p>
+          <span class="kit">Kit:</span> Yes, I really loved the berries-they're
+          my favourites. Rob really is my best friend. Now we can peacefully
+          head to the forest.
+        </p>
+      </div>
+
+      <div class="forest-image">
+        <img src="./picture1.png" alt="" />
+      </div>
+
+      <div class="dialogue">
+        <p>
+          <span class="laya">Laya:</span> Distances seem so much shorter now
+          that we're in a happier mood. Here we are, at the beginning of the
+          forest.
+        </p>
+
+        <div class="two-column">
+          <div>
+            <p>
+              <span class="kit">Kit:</span> Wheee. But, I can see no roads here.
+              How are we going to go ahead since our car won't make it?
+            </p>
+
+            <p>
+              <span class="laya">Laya:</span> We just need to find a way to make
+              our car run on these rough roads.
+            </p>
+
+            <p>
+              <span class="kit">Kit:</span> How about we build another car, one
+              that can go through these bumpy, uneven forest paths? Our Blix
+              sets do have suspensions in them, don't they?
+            </p>
+          </div>
+
+          <div>
+            <img src="./picture2.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <img
+        src="./picture3.png"
+        alt=""
+        class="final-car"
+        style="width: 100%; height: 100%" />
+      <img
+        src="./picture4.png"
+        alt=""
+        class="ride-image"
+        style="width: 100%; height: 100%" />
+      <img
+        src="./picture5.png"
+        alt=""
+        class="ride-image"
+        style="width: 100%; height: 100%" />
+      <img
+        src="./picture6.png"
+        alt=""
+        class="ride-image"
+        style="width: 100%; height: 100%" />
+
+      <!-- LAST PAGE CONTENT -->
+
+      <div class="final-car">
+        <img src="./picture7.png" alt="" />
+      </div>
+
+      <div class="dialogue">
+        <p>
+          <span class="kit">Kit:</span> This looks like such a fun ride. Did you
+          have fun while doing the test-drive, Laya?
+        </p>
+
+        <p>
+          <span class="laya">Laya:</span> I really did, Kit. It is such an
+          amazing experience. The trees just whizz by, and with this suspension
+          system, there's no stopping us from reaching the North Pole in no
+          time.
+        </p>
+
+        <p>
+          <span class="rob">Rob:</span> Suspensions are an integral part of
+          every car. If you can sit comfortably, sleep, drink juice, eat snacks,
+          or do anything basically in a moving car, you must thank the
+          suspension system for it.
+        </p>
+      </div>
+
+      <div class="ride-image">
+        <img src="./picture8.png" alt="" />
+      </div>
+
+      <!-- FOOTER -->
+      <div class="bottom-banner"></div>
+    </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #f2f2f2;
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      .page {
+        width: 70%;
+        margin: 30px auto;
+        background: #fff;
+        padding: 30px;
+      }
+
+      .top-banner,
+      .bottom-banner {
+        height: 28px;
+        background: linear-gradient(90deg, #cfe4d1, #d6ec67, #dce64a);
+      }
+
+      .chapter-tag {
+        display: inline-block;
+        margin: 20px 0 30px;
+        border-top: 4px solid #57a7df;
+        border-bottom: 4px solid #57a7df;
+        padding: 8px 70px;
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .intro-text p,
+      .dialogue p {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .laya {
+        color: #b2204d;
+        font-weight: bold;
+      }
+
+      .kit {
+        color: #3946b8;
+        font-weight: bold;
+      }
+
+      .rob {
+        color: #00a45b;
+        font-weight: bold;
+      }
+
+      .forest-image {
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      .forest-image img {
+        width: 100%;
+        max-width: 850px;
+      }
+
+      .two-column {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .two-column div {
+        flex: 1;
+      }
+
+      .two-column img {
+        width: 100%;
+      }
+
+      .final-car {
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .final-car img {
+        width: 650px;
+      }
+
+      .ride-image {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .ride-image img {
+        width: 900px;
+      }
+
+      .bottom-banner {
+        margin-top: 40px;
+      }
+
+      @media (max-width: 1100px) {
+        .page {
+          width: 95%;
+        }
+
+        .two-column {
+          flex-direction: column;
+        }
+
+        .ride-image img,
+        .forest-image img,
+        .final-car img {
+          width: 100%;
+        }
+      }
+    </style>
+  </body>
+</html>
