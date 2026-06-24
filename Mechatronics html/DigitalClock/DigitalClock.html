@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 19 - Digital Clock</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #ececec;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        color: #222;
+      }
+
+      .page {
+        width: 1000px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 30px 40px;
+      }
+
+      /* Top Gradient Strip */
+
+      .top-strip {
+        height: 22px;
+        margin-bottom: 20px;
+        background: linear-gradient(
+          to right,
+          #cfe7d3,
+          #cde36b,
+          #d8e84f,
+          #e3e78a
+        );
+      }
+
+      /* Bottom Gradient Strip */
+
+      .bottom-strip {
+        height: 55px;
+        margin-top: 20px;
+        background: linear-gradient(
+          to right,
+          #cfe7d3,
+          #cde36b,
+          #d8e84f,
+          #e3e78a
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+
+      /* Chapter Banner */
+
+      .chapter-title {
+        display: inline-block;
+        border-top: 4px solid #6db2ff;
+        border-bottom: 4px solid #6db2ff;
+        padding: 8px 40px;
+        font-size: 34px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+
+      /* Intro Section */
+
+      .intro {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .intro-text {
+        flex: 1;
+        font-size: 22px;
+        line-height: 1.6;
+      }
+
+      .intro-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .intro-image img {
+        width: 100%;
+      }
+
+      /* Character Colors */
+
+      .kit {
+        color: #3346b8;
+        font-weight: bold;
+      }
+
+      .laya {
+        color: #b02a4f;
+        font-weight: bold;
+      }
+
+      .robb {
+        color: #17a84b;
+        font-weight: bold;
+      }
+
+      .dialogue {
+        margin-top: 18px;
+        font-size: 22px;
+        line-height: 1.7;
+      }
+
+      /* Instruction */
+
+      .activity {
+        margin-top: 35px;
+        font-size: 28px;
+        line-height: 1.5;
+      }
+
+      /* Clock Area */
+
+      .clock-section {
+        display: flex;
+        margin-top: 30px;
+        gap: 30px;
+      }
+
+      .clock-image {
+        flex: 2;
+      }
+
+      .clock-image img {
+        width: 100%;
+      }
+
+      .parts {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .part {
+        border: 2px solid #eadf9d;
+        padding: 10px;
+        font-size: 22px;
+        background: #fffef3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-strip"></div>
+
+      <div class="chapter-title">CHAPTER 19 - DIGITAL CLOCK</div>
+
+      <div class="intro">
+        <div class="intro-text">
+          <div class="dialogue">
+            <span class="kit">Kit:</span>
+            Congratulations!! We won a trip to an exciting adventure, and this
+            map will take us there. There's a horse tied there that we need to
+            free.
+          </div>
+        </div>
+
+        <div class="intro-image">
+          <img src="./picture1.png" alt="Children Scene" />
+        </div>
+      </div>
+
+      <div class="dialogue">
+        <span class="laya">Laya:</span>
+        We need to finish this quickly because the deadline for task completion
+        is 24 hours. And we don't have a watch.
+      </div>
+
+      <div class="dialogue">
+        <span class="laya">Laya:</span>
+        HOLD ONNNNNNNN.. we have Rob, the Robot. He can perform calculations and
+        send notifications every minute. And he won't get tired because he's a
+        robot.
+      </div>
+
+      <div class="dialogue">
+        <span class="kit">Kit:</span>
+        Robb may notify, but he cannot tell us the time, so how will we keep
+        track of it?
+      </div>
+
+      <div class="dialogue">
+        <span class="laya">Laya:</span>
+        That's a good question. Let's build a digital clock that we can alter
+        every minute after each notification.
+      </div>
+
+      <div class="dialogue">
+        <span class="robb">Robb:</span>
+        KIT & Laya, I never knew that you could think like Robots too. What a
+        wonderful solution you thought.
+      </div>
+
+      <div class="activity">
+        Create a Digital clock with blix pieces as shown below. And keep
+        changing the time.
+      </div>
+
+      <div class="clock-section">
+        <div class="clock-image">
+          <img src="./picture2.png" alt="Digital Clock" />
+        </div>
+
+        <div class="parts">
+          <div class="part">P7 - 28 pcs.</div>
+          <div class="part">CH2 - 2 pcs.</div>
+          <div class="part">CT2 - 28 pcs.</div>
+          <div class="part">P21 x 21 - 2 pcs.</div>
+          <div class="part">CT(1x2) - 2 pcs.</div>
+        </div>
+      </div>
+
+      <div class="bottom-strip"></div>
+    </div>
+  </body>
+</html>
