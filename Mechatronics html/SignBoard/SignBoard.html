@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 5 - Sign Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PAGE 1 -->
+    <section class="page">
+      <div class="banner"></div>
+
+      <div class="chapter">CHAPTER 5 - SIGN BOARD</div>
+
+      <div class="dialogue">
+        <p>
+          <span class="rob">Rob:</span> *waves his hand frantically, mouthing
+          something*
+        </p>
+
+        <p>
+          <span class="laya">Laya:</span> Kit, we can't hear Rob at all! He's
+          trying to communicate with us. How do we talk to him when he is this
+          far away?
+        </p>
+      </div>
+
+      <div class="top-section">
+        <div class="left-text">
+          <p>
+            <span class="kit">Kit:</span> Remember you kept a walkie-talkie in
+            your bag? We can just match it to Rob's controller's frequency and
+            we should be able to contact him.
+          </p>
+
+          <p>
+            <span class="laya">Laya:</span> Ooh yes! I'm so glad I kept it now.
+            Okay, here it is, and it is set. Rob! Can you hear us? (voice coming
+            from the walkie-talkie)
+          </p>
+
+          <p><span class="rob">Rob:</span> Hi Laya, can you hear me?</p>
+
+          <p>
+            <span class="kit">Kit:</span> Yes, Rob we can hear you. Phew! Are
+            you doing okay? What fruits do you see?
+          </p>
+
+          <p>
+            <span class="rob">Rob:</span> Laya, Kit. Can you hear me? I can't
+            hear you...
+          </p>
+        </div>
+
+        <div class="right-image">
+          <img src="./picture1.png" alt="" />
+        </div>
+      </div>
+
+      <div class="full-image">
+        <img src="./picture2.png" alt="" />
+      </div>
+
+      <div class="dialogue">
+        <p>
+          <span class="kit">Kit:</span> Laya, I think there is a problem; Rob is
+          not able to hear us, I'm getting worried. (voice coming from the
+          walkie-talkie)
+        </p>
+
+        <p>
+          <span class="rob">Rob:</span> I have bad news my friends, my
+          controller is broken. I won't be able to hear you. Why don't you both
+          make sign boards so that we can communicate?
+        </p>
+      </div>
+
+      <div class="center-image">
+        <img src="./picture3.png" alt="" />
+      </div>
+
+      <div class="dialogue">
+        <p>
+          <span class="laya">Laya:</span> Kit, quickly bring out our Blix
+          pieces, we need to make the signs for Rob. (voice coming from the
+          walkie-talkie)
+        </p>
+
+        <p>
+          <span class="rob">Rob:</span> There are lots of berries
+          here-strawberries, and blueberries. There are even apples. I'm sure
+          Kit will be delighted.
+        </p>
+
+        <p>
+          <span class="kit">Kit:</span> Wow! See Laya, this is why Rob is my
+          best friend, he understands my needs perfectly. Mmmm, I'm so excited
+          about the berries.
+        </p>
+
+        <p>
+          <span class="laya">Laya:</span> Shhhhhh. Let me listen to what Rob is
+          speaking. (voice coming from the walkie talkie)
+        </p>
+
+        <p>
+          <span class="rob">Rob:</span> Laya, Kit on the sign boards, show a
+          triangle if you want strawberries, rectangle for blueberries and
+          square for apples, and I'll get you both enough to fill your hungry
+          tummies.
+        </p>
+      </div>
+      <div class="banner footer-banner"></div>
+    </section>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #e6e6e6;
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      .page {
+        width: 75%;
+        margin: 40px auto;
+        background: #fff;
+        padding: 25px;
+      }
+
+      .banner {
+        height: 22px;
+        background: linear-gradient(90deg, #cde1d0, #d8ea58, #d6df4b);
+        margin-bottom: 20px;
+      }
+
+      .chapter {
+        display: inline-block;
+        border-top: 4px solid #57a5dc;
+        border-bottom: 4px solid #57a5dc;
+        padding: 5px 80px;
+        font-size: 34px;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+
+      .dialogue p {
+        font-size: 22px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+        color: #222;
+      }
+
+      .rob {
+        color: #00a65a;
+        font-weight: bold;
+      }
+
+      .laya {
+        color: #b11645;
+        font-weight: bold;
+      }
+
+      .kit {
+        color: #364aa6;
+        font-weight: bold;
+      }
+
+      .top-section {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+      }
+
+      .left-text {
+        flex: 1;
+      }
+
+      .right-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .right-image img {
+        width: 100%;
+        max-width: 450px;
+      }
+
+      .full-image {
+        margin-top: 20px;
+      }
+
+      .full-image img {
+        width: 100%;
+      }
+
+      .center-image {
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .center-image img {
+        width: 700px;
+        max-width: 100%;
+      }
+
+      .footer-banner {
+        margin-top: 30px;
+      }
+
+      @media (max-width: 1100px) {
+        .page {
+          width: 95%;
+        }
+
+        .top-section {
+          flex-direction: column;
+        }
+
+        .center-image img,
+        .full-image img,
+        .right-image img {
+          width: 100%;
+        }
+
+        .chapter {
+          font-size: 24px;
+          padding: 5px 30px;
+        }
+      }
+    </style>
+  </body>
+</html>
