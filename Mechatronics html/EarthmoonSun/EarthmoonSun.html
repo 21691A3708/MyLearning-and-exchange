@@ -1,0 +1,283 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earth Moon & Sun</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #e5e5e5;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        padding: 20px;
+      }
+
+      .page {
+        width: 1000px;
+        min-height: 1400px;
+        margin: 0 auto 40px;
+        background: #fff;
+        position: relative;
+        padding: 40px 60px;
+      }
+
+      /* Top & Bottom Strips */
+
+      .top-strip,
+      .bottom-strip {
+        width: 100%;
+        height: 25px;
+        background: linear-gradient(
+          to right,
+          #cde6d5,
+          #cfe46a,
+          #d8e84c,
+          #e0e88b
+        );
+      }
+
+      .bottom-strip {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+
+      /* Chapter */
+
+      .chapter {
+        margin-top: 25px;
+        margin-bottom: 40px;
+      }
+
+      .chapter-title {
+        display: inline-block;
+        border-top: 4px solid #63aefb;
+        border-bottom: 4px solid #63aefb;
+        padding: 10px 40px;
+        font-size: 34px;
+        font-weight: bold;
+      }
+
+      /* Text */
+
+      .content {
+        font-size: 22px;
+      }
+
+      .kit {
+        color: #3247b8;
+        font-weight: bold;
+      }
+
+      .laya {
+        color: #b52d4f;
+        font-weight: bold;
+      }
+
+      .paragraph {
+        margin-bottom: 25px;
+      }
+
+      /* Moon Scene Layout */
+
+      .moon-scene {
+        position: absolute;
+        top: 380px;
+        right: 40px;
+        width: 620px;
+        height: 420px;
+        border: 2px dashed #999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fafafa;
+        color: #777;
+      }
+
+      .left-dialogue {
+        width: 260px;
+        margin-top: 20px;
+      }
+
+      .after-image {
+        margin-top: 30px;
+        width: 100%;
+        display: block;
+        
+      }
+
+      /* Page Number */
+
+      .page-number {
+        position: absolute;
+        bottom: 35px;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        left: 0;
+      }
+
+      /* Last Page */
+
+      .step-title {
+        font-size: 40px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+      .model-layout {
+        position: relative;
+        min-height: 900px;
+      }
+
+      .parts-left {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 180px;
+      }
+
+      .parts-right {
+        position: absolute;
+        right: 0;
+        top: 120px;
+        width: 180px;
+      }
+
+      .part {
+        border: 1px solid #e0c95c;
+        padding: 8px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .model-image {
+        width: 600px;
+        height: 600px;
+        border: 2px dashed #999;
+        background: #fafafa;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #777;
+      }
+
+      .note {
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- PAGE 1 -->
+
+    <section class="page">
+      <div class="top-strip"></div>
+
+      <div class="chapter">
+        <div class="chapter-title">CHAPTER 20 - EARTH MOON & SUN</div>
+      </div>
+
+      <div class="content">
+        <div class="paragraph">
+          They continued by keeping a record of the time. The sun was setting,
+          and three of them sat on the floor to rest.
+        </div>
+
+        <div class="paragraph">
+          Kit looked at the sky and called Laya. Laya Laya Laya, look at this
+          moon, how beautiful it appears. And Is it inside the earth?
+        </div>
+      </div>
+
+      <div class="moon-scene">
+        <img src="./picture1.png" alt="Moon Scene" />
+      </div>
+
+      <div class="left-dialogue content">
+        <div class="paragraph">
+          <span class="laya">Laya:</span>
+          Oh no Kit!! We live on the outermost layer on earth and that's why we
+          could see the moon from here.
+        </div>
+
+        <div class="paragraph">
+          <span class="kit">Kit:</span>
+          Ohh Really ? I want to know more
+        </div>
+
+        <div class="paragraph">
+          <span class="laya">Laya:</span>
+          Ohk, like the other planets the earth rotates around the sun and it
+          takes 365 days to complete a full orbit. We call this a complete
+          revolution.
+        </div>
+      </div>
+
+      <div class="content after-image">
+        <div class="paragraph">
+          And thanks to this revolution we have different seasons throughout the
+          year. At the same time the earth rotates around itself and it takes 24
+          hours to complete a full trip.
+        </div>
+
+        <div class="paragraph">
+          This movement is called rotation and the earth's rotation is
+          responsible for the change between day and night and for the rising
+          and falling of temperatures.
+        </div>
+
+        <div class="paragraph">
+          KIT: Wait what ? I didn't understand so much of it.
+        </div>
+
+        <div class="paragraph">
+          <span class="laya">Laya:</span>
+          Brrrrr!! Okay let me create a model and then explain.
+        </div>
+      </div>
+
+      <img src="./picture2.png" alt="Model Image" class="after-image" />
+      <img src="./picture3.png" alt="Model Image" class="after-image" />
+      
+
+      <div class="step-title">Step 8</div>
+
+      <div class="model-layout">
+        <div class="parts-left">
+          <div class="part">TW1 - 1 pc.</div>
+          <div class="part">P3 Plus - 1 pc.</div>
+        </div>
+
+        <div class="model-image">
+          <img src="./picture4.png" alt="Model Image" />
+        </div>
+
+        <div class="parts-right">
+          <div class="part">G20 Plus - 1 pc.</div>
+          <div class="part">Wheel - 1 pc.</div>
+        </div>
+      </div>
+
+      <div class="note">
+        The side of the earth facing the sun experiences day, while the other
+        side experiences night. That's how we understood time in the primitive
+        era.
+      </div>
+
+      <div class="bottom-strip"></div>
+   
+  </body>
+</html>
+
