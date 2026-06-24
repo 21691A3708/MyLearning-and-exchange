@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 8 - Lift</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #e5e5e5;
+        font-family: Arial, sans-serif;
+      }
+
+      /* COMMON PAGE */
+
+      .page {
+        width: 900px;
+        min-height: 1270px;
+        background: #fff;
+        margin: 30px auto;
+        position: relative;
+        padding: 30px 40px 110px;
+      }
+
+      .top-strip,
+      .bottom-strip {
+        height: 22px;
+        background: linear-gradient(90deg, #d6f1d8, #c8ea63, #d9e857);
+      }
+
+      .top-strip {
+        margin-bottom: 30px;
+      }
+
+      .bottom-strip {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .page-no {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+      }
+
+      /* PAGE 1 */
+
+      .chapter {
+        display: inline-block;
+        font-size: 32px;
+        font-weight: bold;
+        border-bottom: 4px solid #4fa9eb;
+        padding: 8px 20px;
+        margin-bottom: 40px;
+      }
+
+      .page1-content {
+        display: flex;
+        gap: 25px;
+      }
+
+      .text-col {
+        width: 48%;
+      }
+
+      .image-col {
+        width: 52%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .dialog {
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+      }
+
+      .kit {
+        color: #304cb3;
+        font-weight: bold;
+      }
+      .laya {
+        color: #b32148;
+        font-weight: bold;
+      }
+      .robb {
+        color: #0b9f63;
+        font-weight: bold;
+      }
+
+      .treehouse {
+        width: 100%;
+        max-width: 470px;
+      }
+
+      /* PAGE 2 */
+
+      .step-label {
+        display: inline-block;
+        border: 3px solid #4da7e8;
+        border-radius: 25px;
+        padding: 6px 18px;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+
+      .step-section {
+        margin-bottom: 80px;
+        width: 100%;
+      }
+
+      .parts-row {
+        display: flex;
+        gap: 25px;
+        margin: 20px 0;
+      }
+
+      .part {
+        text-align: center;
+      }
+
+      .part-image {
+        width: 80px;
+        height: 80px;
+        border: 2px dashed #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+
+      .part-name {
+        border: 1px solid #d6c45c;
+        padding: 5px 10px;
+        margin-top: 5px;
+        font-size: 16px;
+      }
+
+      .step-layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .build-image {
+        width: 360px;
+        height: 260px;
+        border: 3px dashed #bbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+      }
+
+      .connector-line {
+        border-top: 1px solid #bdbdbd;
+        margin: 25px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PAGE 1 -->
+
+    <div class="page">
+      <div class="top-strip"></div>
+
+      <div class="chapter">CHAPTER 8 - LIFT</div>
+
+      <div class="page1-content">
+        <div class="text-col">
+          <div class="dialog">
+            <span class="kit">Kit:</span>
+            Woahh, that ladder made us climb really faster. Let's get in.
+          </div>
+
+          <div class="dialog">
+            Inside the house, they come across a man who seems sad because his
+            ladder was stolen and he couldn't get back.
+          </div>
+
+          <div class="dialog">
+            <span class="kit">Kit:</span>
+            Sir, you don't need to worry anymore, we just made a ladder and can
+            come down.
+          </div>
+
+          <div class="dialog">
+            <span class="laya">Laya:</span>
+            Yes, come on! But unfortunately, the second ladder was also stolen.
+          </div>
+
+          <div class="dialog">
+            <span class="robb">Robb:</span>
+            I told you, unknown places are full of misfortunes, what do we do
+            now?
+          </div>
+
+          <div class="dialog">
+            <span class="laya">Laya:</span>
+            But Robb, can you scan this place and find some important pieces
+            that can be used to create an elevator or Lift?
+          </div>
+
+          <div class="dialog">
+            <span class="robb">Robb:</span>
+            This place has two types of gears, Rack Gear & G(20).
+          </div>
+
+          <div class="dialog">
+            Rack gear looks like a straight bar with teeth on it and moves in a
+            straight line, while gear (20) looks like a circle with teeth on the
+            edge and rotates in a circular motion. Let's use them.
+          </div>
+
+          <div class="dialog">
+            <span class="kit">Kit:</span>
+            Woahh Robb, you are genius, Thanks for coming!!
+          </div>
+        </div>
+
+        <div class="image-col">
+          <img src="./picture1.png" class="treehouse" />
+        </div>
+      </div>
+      <div class="step-section">
+        <img src="./picture2.png" style="width: 100%; height: 100%" />
+        <img src="./picture3.png" style="width: 100%; height: 100%" />
+        <img src="./picture4.png" style="width: 100%; height: 100%" />
+        <img src="./picture5.png" style="width: 100%; height: 100%" />
+        <img src="./picture6.png" style="width: 100%; height: 100%" />
+      </div>
+      <div class="bottom-strip"></div>
+    </div>
+  </body>
+</html>
